@@ -1,0 +1,807 @@
+@import "variables";
+@import "fonts";
+@import "perfil";
+@import "gridcolumn.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    color:$colorTres;
+    text-transform: lowercase;
+    font-family: $font;
+}
+
+h2{
+    color:$colorTres;
+    text-transform: lowercase;
+    font-family: $font;
+}
+
+p{
+    color:$colorDos;
+    text-transform: lowercase;
+    font-family: $fontDos;   
+}
+
+header{
+    background-color: $background;
+}
+
+.navbar-brand{
+
+    img{
+        width: 60px;
+        height: 50px;
+    }
+}
+
+main{
+    width: 100%;
+}
+
+.carousel-container{
+
+    h5{
+        font-family: $font;
+        color: $color;
+        text-transform: lowercase;
+        font-size: 6rem;
+    }
+
+    p{
+        font-family: $fontDos;
+        text-transform: lowercase;
+        font-size: 4rem;
+    }
+
+    @media (max-width: 1000px) {
+
+        h5{
+                font-family: $font;
+                color: $color;
+                text-transform: lowercase;
+                font-size: 5rem;
+
+            }
+
+        p{
+                font-family: $fontDos;
+                text-transform: lowercase;
+                font-size: 3rem;
+            }
+
+        
+
+    }
+   
+}
+
+.separador{
+    background-color: $background;
+    height: 1px;
+    animation-name: lineacolor;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+    @keyframes lineacolor{
+
+        0%{
+            width: 10%;
+            background-color: pink;
+        }
+     
+        100%{
+            width: 100%;
+            background-color: red;
+        }
+    
+    
+    }
+}
+
+.mainText{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+
+    h1{
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 4rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }    
+
+    h2{
+        font-size: 5rem;
+        padding-top: 1rem;
+    }
+
+    @media (max-width: 1400px) {
+
+        
+            h1{
+                font-size: 4rem;
+            }
+
+            p{
+                font-size: 3rem;
+            }
+
+            h2{
+                font-size: 4rem;
+            }
+
+        
+        
+    }
+
+    @media (max-width: 1000px) {
+        
+            padding: 0.5rem;
+
+            h1{
+                font-size: 3rem;
+            }
+
+            p{
+                font-size: 2.5rem;
+                margin-top: 0.5rem;
+                padding: 0.5rem;
+            }
+
+            h2{
+                font-size: 3rem;
+                padding-top: 0.5rem;
+            }
+        
+        
+    }
+
+    @media (max-width: 600px) {
+
+        .mainText{
+            padding: 0.5rem;
+
+            h1{
+                font-size: 2.5rem;
+            }
+
+            p{
+                font-size: 2rem;
+                margin-top: 0.1rem;
+                padding: 0.3rem;
+            }
+
+            h2{
+                font-size: 2.5rem;
+                padding-top: 0.1rem;
+            }
+        }
+
+    }
+
+}
+
+.galeria{
+    @extend .gridc;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding:0;
+        text-align: center;
+
+    &__carta{
+
+        &--sm{
+            width: 20rem;
+            height: 20rem;
+            padding: 2rem;
+        }
+    }
+
+    &__foto{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        border: $border;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $color;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+
+    @media (max-width: 1400px) {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+    
+    @media (max-width: 1000px) {
+
+        
+
+            grid-template-columns: 1fr 1fr 1fr;
+            
+
+            &__carta{
+
+                &--sm{
+                    width: 10rem;
+                    height: 10rem;
+                    padding: 0;
+                }
+            }
+
+            &__link{
+                font-size: 10px;
+            }
+
+        
+
+    }
+    
+    @media (max-width: 600px) {
+
+        
+
+            grid-template-columns: 1fr 1fr;
+            
+
+            &__carta{
+
+                &--sm{
+                    width: 10rem;
+                    height: 10rem;
+                    padding: 0;
+                }
+            }
+
+            &__link{
+                font-size: 10px;
+            }
+
+           
+    
+    }
+    
+}
+
+@mixin gtext ($colorH:$color, $fuente:$font, $colorP:$color, $fuenteP:$font, $colorHdos:$color, $fuenteDos:$font, $txt:lowercase){
+
+    text-align: center;
+    padding: 1rem;
+
+    h1{
+        color: $colorH;
+        font-family: $fuente;
+        text-transform: $txt;
+    }
+
+    p{
+        color: $colorP;
+        font-family: $fuenteP;
+        text-transform: $txt;
+    }
+
+    h2{
+        color: $colorHdos;
+        font-family: $fuenteDos;
+        text-transform: $txt;
+    }
+
+}
+
+.generalText{
+
+    @include gtext ($colorTres, $font, $colorDos, $fontDos, $colorTres, $font, $txt:lowercase);
+
+    h1{
+        
+        font-size: 5rem;
+    }
+
+    p{
+        
+        font-size: 3rem;
+    }
+
+    h2{
+        
+        font-size: 4rem;
+    }
+
+    ol li{
+        color: $colorTres;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+
+    @media (max-width: 1000px){
+
+        h1{
+        
+            font-size: 4rem;
+        }
+    
+        p{
+            
+            font-size: 2.5rem;
+        }
+    
+        h2{
+            
+            font-size: 3rem;
+        }
+        
+    }
+
+}
+
+
+.product{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    p{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    &__card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    &__item{
+        width: 15rem;
+        background-color: rgb(245, 201, 208);
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 30px;
+        border: none;
+
+        img{
+            width: 100%;
+            border-radius: 20px; 
+        }
+    }
+
+    &__text{
+        text-align: center;
+
+        h2{
+            color: $colorDos;
+            text-transform: lowercase;
+            font-family: $fontDos;
+            font-size: 3.5rem;
+            
+        }
+
+
+        p{
+            color: $colorDos;
+            text-transform: lowercase;
+            font-family: $fontDos;
+            font-size: 3rem;
+        }
+    }
+
+    &__btn{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        min-height: 4vh;
+
+        &--hover{
+            color: rgb(252, 136, 155);
+            text-transform: lowercase;
+            font-family: 'Tangerine', cursive;
+            font-size: 2rem;
+            background-color: white;
+            border-radius: 30px;
+            border: none;
+            padding: .2rem 1rem;
+            
+            transition: ease-out 0.5s;
+
+            &:hover{
+                transform: scale(1.2,1.2);
+                background-color: #a55252;
+                color: white;
+            }
+        }
+
+    }
+
+    @media (max-width:1000px) {
+
+        h1{
+            font-size: 3.5rem;
+            
+        }
+    
+        p{
+            font-size: 3rem;
+        }
+        
+    }
+
+    @media (max-width:600px) {
+
+        h1{
+            font-size: 3rem;
+            
+        }
+    
+        p{
+            font-size: 2.5rem;
+        }
+        
+    }
+}
+
+.accesorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__carta{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+
+    &__foto{
+        width: 60%;
+        max-width: 25rem;
+        max-height: 45rem;
+        border: $border;
+
+    }
+
+    &__texto{
+        width: 40%;
+        
+        p{
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            font-family: $fontDos;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+
+            .accesorios{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                flex-wrap: wrap;
+
+                h1{
+                    width: 100%;
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+
+                &__carta{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 1rem;
+                }
+
+                &__foto{
+                    width: 100%;
+                    max-width: 15rem;
+                    max-height: 35rem;
+                    border: solid pink 1px;
+                }
+
+                &__texto{
+                    width: 100%;
+
+                    p{
+                        font-size: 2rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    h2{
+                        margin-top: 2rem;
+                        font-size: 3rem;
+                        font-family: 'Tangerine', cursive;
+                        margin-bottom: 2rem;
+                    }
+
+                }
+
+                
+
+            }
+
+        }
+}
+
+.accesorios-galeria{
+    .product{
+        &__item{
+            background-color: white;
+            border-radius: 0;
+            border: $border;
+
+            img{
+                width: 100%;
+                border-radius: 0;
+                border: black solid 1px;
+            }
+        }
+
+        &__btn{
+    
+            &--hover{
+                color: white;
+                background-color: rgb(252, 136, 155);
+                border-radius: 20px;
+                border: none;
+    
+                &:hover{
+                    font-size: 2rem;
+                    border: green solid 1px;
+                }
+            }
+    
+        }
+        
+    }
+}
+
+.nosotros{
+
+    .generalText{
+
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+
+        h1{
+            font-size: 5rem;
+        }
+
+        p{
+            margin: 2rem;
+            font-size: 3rem;
+        }
+
+        h2{
+            font-size: 4rem;
+        }
+
+        @media (max-width: 1000px){
+
+            h1{
+            
+                font-size: 3rem;
+            }
+        
+            p{
+                
+                font-size: 2rem;
+            }
+            
+        }
+
+    }
+
+
+    
+}
+
+.perfil-container{
+
+    @extend .gridc;
+
+    .perfil{
+        @extend .ucard;
+        max-width: 300px;
+        text-align: center;
+    
+        img{
+            @extend .avatar;
+        }
+    
+        h3{
+            @extend .tittle;
+        }
+        
+        p{
+            @extend .small;
+        }
+    }
+
+
+
+}
+
+.form{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .container-form{
+        border: $border;
+        padding: 0.5rem;
+
+        div{
+            margin: 0.1rem;
+        }
+
+        h3{
+            font-size: 1rem;
+            text-align: start;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+
+    }
+
+
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    color: $ColorCuatro;
+    text-align: center;
+    background-color: $background;
+    bottom: 0px;
+
+    &__contacto{
+        padding: 0.2rem;
+
+        &--space{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 8px;
+        }
+    }
+
+    p{
+        color: $ColorCuatro;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    @media (max-width: 600px){
+        &--space{
+            font-size: 12px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+.container-error{
+    padding: 10rem;
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+
+    h1{
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+    }
+
+    h2{
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    p{
+        color: saddlebrown;
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-transform: uppercase;
+
+        a{
+            text-decoration: none;
+            color: red;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+            
+        }
+    }
+
+    @media (max-width:1400px){
+        padding: 2rem;
+    }
+
+
+    @media (max-width:600px) {
+        padding: 4rem;
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 20px;
+
+            a{
+                font-size: 25px;
+            }
+        }
+
+        
+        
+    }
+}
