@@ -12,13 +12,13 @@
 h1{
     color:$colorTres;
     text-transform: uppercase;
-    font-family: $font;
+    font-family: 'Cabin', sans-serif;;
 }
 
 h2{
     color:$colorTres;
     text-transform: uppercase;
-    font-family: $font;
+    font-family: 'Cabin', sans-serif;;
 }
 
 p{
@@ -46,7 +46,7 @@ main{
 .carousel-container{
 
     h5{
-        font-family: $font;
+        font-family: 'Cabin', sans-serif;;
         color: $ColorCuatro;
         text-transform: uppercase;
         font-size: 6rem;
@@ -61,7 +61,7 @@ main{
     @media (max-width: 1000px) {
 
         h5{
-                font-family: $font;
+                font-family: 'Cabin', sans-serif;;
                 color: $color;
                 text-transform: lowercase;
                 font-size: 5rem;
@@ -450,7 +450,7 @@ main{
         }
     
         p{
-            font-size: 1.5rem;
+            font-size: 3rem;
         }
         
     }
