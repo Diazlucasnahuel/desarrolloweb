@@ -52,18 +52,18 @@
 
 h1 {
   color: black;
-  text-transform: lowercase;
-  font-family: "Sacramento", cursive; }
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif; }
 
 h2 {
   color: black;
-  text-transform: lowercase;
-  font-family: "Sacramento", cursive; }
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif; }
 
 p {
   color: #a55252;
   text-transform: lowercase;
-  font-family: "Tangerine", cursive; }
+  font-family: "Zen Kaku Gothic Antique", sans-serif; }
 
 header {
   background-color: pink; }
@@ -76,26 +76,27 @@ main {
   width: 100%; }
 
 .carousel-container h5 {
-  font-family: "Sacramento", cursive;
+  font-family: "Cabin", sans-serif;
   color: pink;
-  text-transform: lowercase;
-  font-size: 6rem; }
+  text-transform: uppercase;
+  font-size: 7rem; }
 
 .carousel-container p {
-  font-family: "Tangerine", cursive;
-  text-transform: lowercase;
-  font-size: 4rem; }
+  font-family: "Cabin", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem; }
 
 @media (max-width: 1000px) {
   .carousel-container h5 {
-    font-family: "Sacramento", cursive;
+    font-family: "Cabin", sans-serif;
     color: pink;
-    text-transform: lowercase;
-    font-size: 5rem; }
+    text-transform: uppercase;
+    font-size: 2.5rem; }
   .carousel-container p {
-    font-family: "Tangerine", cursive;
-    text-transform: lowercase;
-    font-size: 3rem; } }
+    font-family: "Cabin", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem; } }
 
 .separador {
   background-color: pink;
@@ -117,44 +118,45 @@ main {
   padding: 1rem;
   text-align: center; }
   .mainText h1 {
-    font-size: 5rem; }
+    font-size: 3.5rem; }
   .mainText p {
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 1rem;
-    padding: 1rem; }
+    padding: 1rem;
+    text-transform: uppercase; }
   .mainText h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     padding-top: 1rem; }
   @media (max-width: 1400px) {
     .mainText h1 {
-      font-size: 4rem; }
+      font-size: 2.5rem; }
     .mainText p {
-      font-size: 3rem; }
+      font-size: 1.8rem; }
     .mainText h2 {
-      font-size: 4rem; } }
+      font-size: 2.5rem; } }
   @media (max-width: 1000px) {
     .mainText {
       padding: 0.5rem; }
       .mainText h1 {
-        font-size: 3rem; }
+        font-size: 2rem; }
       .mainText p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         margin-top: 0.5rem;
         padding: 0.5rem; }
       .mainText h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 0.5rem; } }
   @media (max-width: 600px) {
     .mainText .mainText {
       padding: 0.5rem; }
       .mainText .mainText h1 {
-        font-size: 2.5rem; }
+        font-size: 2rem; }
       .mainText .mainText p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 0.1rem;
         padding: 0.3rem; }
       .mainText .mainText h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding-top: 0.1rem; } }
 
 .galeria {
@@ -202,15 +204,15 @@ main {
   padding: 1rem; }
   .generalText h1 {
     color: black;
-    font-family: "Sacramento", cursive;
+    font-family: "Cabin", sans-serif;
     text-transform: lowercase; }
   .generalText p {
     color: #a55252;
-    font-family: "Tangerine", cursive;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
     text-transform: lowercase; }
   .generalText h2 {
     color: black;
-    font-family: "Sacramento", cursive;
+    font-family: "Cabin", sans-serif;
     text-transform: lowercase; }
   .generalText h1 {
     font-size: 5rem; }
@@ -240,11 +242,11 @@ main {
   flex-direction: column;
   align-items: center; }
   .product h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     padding: 1rem; }
   .product p {
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center; }
   .product__card {
     width: 100%;
@@ -268,13 +270,13 @@ main {
     .product__text h2 {
       color: #a55252;
       text-transform: lowercase;
-      font-family: "Tangerine", cursive;
-      font-size: 3.5rem; }
+      font-family: "Zen Kaku Gothic Antique", sans-serif;
+      font-size: 2.5rem; }
     .product__text p {
       color: #a55252;
       text-transform: lowercase;
-      font-family: "Tangerine", cursive;
-      font-size: 3rem; }
+      font-family: "Zen Kaku Gothic Antique", sans-serif;
+      font-size: 2rem; }
   .product__btn {
     width: auto;
     display: flex;
@@ -299,7 +301,7 @@ main {
         color: white; }
   @media (max-width: 1000px) {
     .product h1 {
-      font-size: 3.5rem; }
+      font-size: 2rem; }
     .product p {
       font-size: 3rem; } }
   @media (max-width: 600px) {
@@ -337,7 +339,7 @@ main {
       margin-bottom: 2rem; }
     .accesorios__texto h2 {
       font-size: 3rem;
-      font-family: "Tangerine", cursive;
+      font-family: "Zen Kaku Gothic Antique", sans-serif;
       margin-bottom: 2rem; }
   @media (max-width: 600px) {
     .accesorios .accesorios {
