@@ -359,13 +359,13 @@ main{
     align-items: center;
     
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
         padding: 1rem;
     }
 
     p{
-        font-size: 4rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
@@ -399,7 +399,7 @@ main{
             color: $colorDos;
             text-transform: lowercase;
             font-family: $fontDos;
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             
         }
 
@@ -408,7 +408,7 @@ main{
             color: $colorDos;
             text-transform: lowercase;
             font-family: $fontDos;
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 
@@ -445,12 +445,12 @@ main{
     @media (max-width:1000px) {
 
         h1{
-            font-size: 3.5rem;
+            font-size: 2rem;
             
         }
     
         p{
-            font-size: 3rem;
+            font-size: 1.5rem;
         }
         
     }
