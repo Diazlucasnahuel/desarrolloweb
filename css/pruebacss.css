@@ -268,13 +268,6 @@ main {
   flex-direction: column;
   align-items: center; }
   .product h1 {
-<<<<<<< HEAD
-    font-size: 4rem;
-    text-align: center;
-    padding: 1rem; }
-  .product p {
-    font-size: 2.5rem;
-=======
     font-size: 3.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -282,7 +275,6 @@ main {
   .product p {
     font-size: 2rem;
     text-transform: uppercase;
->>>>>>> cards
     text-align: center; }
   .product__card {
     width: 100%;
@@ -305,16 +297,6 @@ main {
     text-align: center; }
     .product__text h2 {
       color: #a55252;
-<<<<<<< HEAD
-      text-transform: lowercase;
-      font-family: "Zen Kaku Gothic Antique", sans-serif;
-      font-size: 2.5rem; }
-    .product__text p {
-      color: #a55252;
-      text-transform: lowercase;
-      font-family: "Zen Kaku Gothic Antique", sans-serif;
-      font-size: 2rem; }
-=======
       text-transform: uppercase;
       font-family: "Zen Kaku Gothic Antique", sans-serif;
       font-size: 1.5rem; }
@@ -323,7 +305,6 @@ main {
       text-transform: uppercase;
       font-family: "Zen Kaku Gothic Antique", sans-serif;
       font-size: 1.5rem; }
->>>>>>> cards
   .product__btn {
     width: auto;
     display: flex;
@@ -348,11 +329,7 @@ main {
         color: white; }
   @media (max-width: 1000px) {
     .product h1 {
-<<<<<<< HEAD
-      font-size: 2rem; }
-=======
       font-size: 3rem; }
->>>>>>> cards
     .product p {
       font-size: 2rem; }
     .product .product__text p {
@@ -392,11 +369,7 @@ main {
       margin-bottom: 2rem;
       text-transform: unset; }
     .accesorios__texto h2 {
-<<<<<<< HEAD
-      font-size: 3rem;
-=======
       font-size: 2.5rem;
->>>>>>> cards
       font-family: "Zen Kaku Gothic Antique", sans-serif;
       margin-bottom: 2rem; }
   @media (max-width: 1200px) {
