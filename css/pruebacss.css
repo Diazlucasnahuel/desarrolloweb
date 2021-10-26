@@ -215,24 +215,50 @@ main {
     font-family: "Cabin", sans-serif;
     text-transform: lowercase; }
   .generalText h1 {
-    font-size: 5rem; }
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 2rem; }
   .generalText p {
-    font-size: 3rem; }
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase; }
   .generalText h2 {
-    font-size: 4rem; }
+    font-size: 2.5rem;
+    text-transform: uppercase; }
   .generalText ol li {
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
     text-align: center;
     text-transform: uppercase;
     list-style-type: none; }
   @media (max-width: 1000px) {
     .generalText h1 {
-      font-size: 4rem; }
+      font-size: 3rem; }
     .generalText p {
-      font-size: 2.5rem; }
+      font-size: 2rem; }
     .generalText h2 {
-      font-size: 3rem; } }
+      padding: 2rem;
+      font-size: 2rem; }
+    .generalText ol li {
+      font-size: 1rem;
+      line-height: 2rem; } }
+  @media (max-width: 600px) {
+    .generalText h1 {
+      width: 100%;
+      font-size: 2rem; }
+    .generalText p {
+      padding: 1rem;
+      font-size: 1.5rem; }
+    .generalText h2 {
+      padding: 1rem;
+      font-size: 1.8rem; }
+    .generalText ol li {
+      width: 100%;
+      font-size: 1rem;
+      line-height: 2rem; } }
 
 .product {
   width: 100%;
@@ -242,11 +268,13 @@ main {
   flex-direction: column;
   align-items: center; }
   .product h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
     text-align: center;
     padding: 1rem; }
   .product p {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
     text-align: center; }
   .product__card {
     width: 100%;
@@ -269,14 +297,14 @@ main {
     text-align: center; }
     .product__text h2 {
       color: #a55252;
-      text-transform: lowercase;
+      text-transform: uppercase;
       font-family: "Zen Kaku Gothic Antique", sans-serif;
-      font-size: 2.5rem; }
+      font-size: 1.5rem; }
     .product__text p {
       color: #a55252;
-      text-transform: lowercase;
+      text-transform: uppercase;
       font-family: "Zen Kaku Gothic Antique", sans-serif;
-      font-size: 2rem; }
+      font-size: 1.5rem; }
   .product__btn {
     width: auto;
     display: flex;
@@ -289,7 +317,7 @@ main {
       color: #fc889b;
       text-transform: lowercase;
       font-family: 'Tangerine', cursive;
-      font-size: 2rem;
+      font-size: 1.5rem;
       background-color: white;
       border-radius: 30px;
       border: none;
@@ -301,14 +329,16 @@ main {
         color: white; }
   @media (max-width: 1000px) {
     .product h1 {
-      font-size: 2rem; }
-    .product p {
-      font-size: 3rem; } }
-  @media (max-width: 600px) {
-    .product h1 {
       font-size: 3rem; }
     .product p {
-      font-size: 2.5rem; } }
+      font-size: 2rem; }
+    .product .product__text p {
+      font-size: 1.5rem; } }
+  @media (max-width: 600px) {
+    .product h1 {
+      font-size: 2rem; }
+    .product p {
+      font-size: 1.5rem; } }
 
 .accesorios {
   display: flex;
@@ -318,7 +348,7 @@ main {
   margin-bottom: 2rem; }
   .accesorios h1 {
     font-size: 4rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
   .accesorios__carta {
     width: 80%;
     display: flex;
@@ -335,20 +365,32 @@ main {
   .accesorios__texto {
     width: 40%; }
     .accesorios__texto p {
-      font-size: 2.5rem;
-      margin-bottom: 2rem; }
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      text-transform: unset; }
     .accesorios__texto h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-family: "Zen Kaku Gothic Antique", sans-serif;
       margin-bottom: 2rem; }
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
+    .accesorios h1 {
+      font-size: 3rem; }
+    .accesorios .accesorios__texto h2 {
+      font-size: 2rem; }
+    .accesorios .accesorios__texto p {
+      font-size: 1.5rem; }
+    .accesorios .accesorios__foto {
+      width: 40%;
+      max-width: 20rem;
+      max-height: 40rem;
+      border: solid pink 1px; } }
+  @media (max-width: 1000px) {
     .accesorios .accesorios {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
+      padding: 3rem;
       flex-wrap: wrap; }
       .accesorios .accesorios h1 {
         width: 100%;
@@ -361,22 +403,40 @@ main {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 1rem; }
+        padding: 2rem;
+        border-radius: 0;
+        border: solid pink 1px; }
       .accesorios .accesorios__foto {
         width: 100%;
-        max-width: 15rem;
-        max-height: 35rem;
+        max-width: 25rem;
+        max-height: 40rem;
         border: solid pink 1px; }
       .accesorios .accesorios__texto {
-        width: 100%; }
+        width: 100%;
+        text-align: center; }
         .accesorios .accesorios__texto p {
-          font-size: 2rem;
+          font-size: 1.5rem;
           margin-bottom: 2rem; }
         .accesorios .accesorios__texto h2 {
           margin-top: 2rem;
-          font-size: 3rem;
-          font-family: 'Tangerine', cursive;
+          font-size: 2.5rem;
           margin-bottom: 2rem; } }
+  @media (max-width: 600px) {
+    .accesorios .accesorios {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      flex-wrap: wrap; }
+      .accesorios .accesorios__texto {
+        width: 100%;
+        text-align: center; }
+        .accesorios .accesorios__texto p {
+          font-size: 1rem;
+          margin-bottom: 2rem; }
+        .accesorios .accesorios__texto h2 {
+          font-size: 2rem; } }
 
 .accesorios-galeria .product__item {
   background-color: white;
@@ -398,22 +458,28 @@ main {
 
 .nosotros .generalText {
   width: 100%;
-  padding: 0;
-  text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 2rem; }
+  padding: 2rem; }
   .nosotros .generalText h1 {
-    font-size: 5rem; }
+    font-family: "Cabin", sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase; }
   .nosotros .generalText p {
-    margin: 2rem;
-    font-size: 3rem; }
-  .nosotros .generalText h2 {
-    font-size: 4rem; }
+    padding: 2rem;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-size: 3rem;
+    text-transform: unset; }
   @media (max-width: 1000px) {
     .nosotros .generalText h1 {
       font-size: 3rem; }
     .nosotros .generalText p {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      padding: 1.5rem; } }
+  @media (max-width: 600px) {
+    .nosotros .generalText h1 {
+      font-size: 2rem; }
+    .nosotros .generalText p {
+      font-size: 1.5rem;
+      padding: 1rem; } }
 
 .perfil-container .perfil {
   max-width: 300px;
